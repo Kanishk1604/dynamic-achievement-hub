@@ -1,12 +1,14 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Menu, X } from "lucide-react";
+import { Github, Linkedin, Menu, Moon, Sun, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTheme } from "./ThemeProvider";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,6 +55,13 @@ const Navbar = () => {
 
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-3">
+            <button
+              onClick={toggleTheme}
+              className="p-2 text-foreground/80 hover:text-primary transition-colors"
+              aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
+            >
+              {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+            </button>
             <a
               href="https://github.com/kanishk"
               target="_blank"
@@ -100,6 +109,13 @@ const Navbar = () => {
               </a>
             ))}
             <div className="flex items-center space-x-3 pt-4">
+              <button
+                onClick={toggleTheme}
+                className="p-2 text-foreground/80 hover:text-primary transition-colors"
+                aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
+              >
+                {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+              </button>
               <a
                 href="https://github.com/kanishk"
                 target="_blank"
