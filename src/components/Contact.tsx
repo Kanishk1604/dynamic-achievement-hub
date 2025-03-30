@@ -63,7 +63,7 @@ const Contact = () => {
                     <div>
                       <h4 className="text-sm font-semibold mb-1">Email</h4>
                       <a href="mailto:saini6@uwindsor.ca" className="text-foreground/80 hover:text-primary transition-colors">
-                        saini6@uwindsor.ca
+                        saini56@uwindsor.ca
                       </a>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                     <div>
                       <h4 className="text-sm font-semibold mb-1">Phone</h4>
                       <a href="tel:+12269610244" className="text-foreground/80 hover:text-primary transition-colors">
-                        +1 226 961 0244
+                        +1 226 961 0204
                       </a>
                     </div>
                   </div>
