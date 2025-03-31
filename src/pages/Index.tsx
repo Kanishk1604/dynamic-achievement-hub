@@ -9,24 +9,21 @@ import LeetCode from "@/components/LeetCode";
 import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from "@/components/ThemeProvider";
 
 const Index = () => {
   return (
-    <ThemeProvider>
-      <div className="min-h-screen">
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <LeetCode />
-        <Achievements />
-        <Contact />
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <LeetCode />
+      <Achievements />
+      <Contact />
+      <Footer />
+    </div>
   );
 };
 
