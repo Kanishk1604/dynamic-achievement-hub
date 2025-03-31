@@ -80,7 +80,9 @@ const Navbar = () => {
             >
               <Linkedin size={20} />
             </a>
-            <Button className="ml-4">Resume</Button>
+            <Button className="ml-4" asChild>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -134,7 +136,9 @@ const Navbar = () => {
               >
                 <Linkedin size={20} />
               </a>
-              <Button className="ml-4">Resume</Button>
+              <Button className="ml-4" asChild>
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+              </Button>
             </div>
           </div>
         </div>
