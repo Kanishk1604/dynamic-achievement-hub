@@ -42,7 +42,7 @@ const projects = [
       "Integrated a responsive React frontend, improving user satisfaction ratings by 30% due to seamless interactions."
     ],
     github: "https://github.com/kanishk/spiritual-knowledge",
-    liveDemo: "https://www.youtube.com/"
+    liveDemo: "https://spiritual-knowledge.example.com"
   }
 ];
 
