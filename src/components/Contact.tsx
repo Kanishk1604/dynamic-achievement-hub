@@ -33,7 +33,7 @@ const Contact = () => {
   // Initialize EmailJS when component mounts
   useEffect(() => {
     // Replace with your EmailJS User ID
-    emailjs.init("YOUR_USER_ID");
+    emailjs.init("Hn0ExHeES3Z9soiAY");
     setIsEmailJSInitialized(true);
   }, []);
 
@@ -58,8 +58,8 @@ const Contact = () => {
     try {
       // Replace with your EmailJS Service ID and Template ID
       const response = await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_spclmdn",
+        "template_elg1n2n",
         {
           from_name: data.name,
           from_email: data.email,
