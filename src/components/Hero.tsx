@@ -27,10 +27,14 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 fade-up animation-delay-300">
-          <Button size="lg" className="w-full sm:w-auto">
+          <Button size="lg" className="w-full sm:w-auto" onClick={() => {
+            document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
+          }}>
             View My Work
           </Button>
-          <Button size="lg" variant="outline" className="w-full sm:w-auto">
+          <Button size="lg" variant="outline" className="w-full sm:w-auto" onClick={() => {
+            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+          }}>
             Contact Me
           </Button>
         </div>
@@ -50,4 +54,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
