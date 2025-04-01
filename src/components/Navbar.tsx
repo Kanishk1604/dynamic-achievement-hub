@@ -81,7 +81,7 @@ const Navbar = () => {
               <Linkedin size={20} />
             </a>
             <Button className="ml-4" asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+              <a href="/Kanishk2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </Button>
           </div>
 

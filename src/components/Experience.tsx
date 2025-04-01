@@ -26,6 +26,7 @@ const experiences = [
   },
   {
     title: "Research Assistant",
+    subtitle: "Supervised under Dr. Asish Mukhopadhyay",
     company: "University of Windsor",
     location: "Windsor, CA",
     period: "Sep 2024 - Apr 2025",
@@ -59,6 +60,9 @@ const Experience = () => {
               <div className="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-full rounded-tr-lg"></div>
               <CardHeader>
                 <CardTitle className="font-serif">{exp.title}</CardTitle>
+                {exp.subtitle && (
+                  <p className="text-primary/90 text-sm font-medium mt-1">{exp.subtitle}</p>
+                )}
                 <div className="flex items-center text-foreground/70 text-sm mt-2">
                   <Briefcase size={16} className="mr-2" />
                   <span>{exp.company}</span>
