@@ -22,8 +22,10 @@ const experiences = [
     location: "Windsor, CA",
     period: "Sep 2024 - Apr 2025",
     description: [
-      "Developed Python algorithms to generate over 100 caterpillar graphs uniformly at random.",
-      "Conducted comprehensive literature reviews of 30+ research papers to enhance algorithm efficiency by 20%."
+      "Developed a Python simulation tool that generates uniformly random outerplanar graphs with up to 12 vertices, accurately reproducing complex block–cutvertex structures with an average of 3 distinct cut–vertices per graph.",
+      "Engineered a recursive decomposition framework implementing 3 core procedures (OPGGEN, OPGGENONE, and OPGGENTWO) that, in simulation tests, produced over 1,000 unique graph instances in under 5 seconds on standard hardware.",
+      "Implemented precise probability sampling techniques based on Schroeder and Catalan numbers, achieving 100% fidelity in forced-sample simulations that mirror theoretical models."
+      ,"Bridged advanced combinatorial research and practical software development by translating intricate pseudocode into a fully functional tool—enhancing both algorithmic understanding and interactive graph visualization capabilities."
     ]
   },
   {
