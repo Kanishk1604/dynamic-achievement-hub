@@ -16,15 +16,6 @@ const experiences = [
     ]
   },
   {
-    title: "Teaching Assistant",
-    company: "University of Windsor",
-    location: "Windsor, CA",
-    period: "Sep 2022 - Present",
-    description: [
-      "Assisted in teaching and grading for courses: Theoretical Fundamentals of Computer Science under Dr.Tsin, Computer Graphics with C++, and Key Concepts of Computer Science to assist over 300+ students."
-    ]
-  },
-  {
     title: "Research Assistant",
     subtitle: "Supervised under Dr. Asish Mukhopadhyay",
     company: "University of Windsor",
@@ -34,7 +25,17 @@ const experiences = [
       "Developed Python algorithms to generate over 100 caterpillar graphs uniformly at random.",
       "Conducted comprehensive literature reviews of 30+ research papers to enhance algorithm efficiency by 20%."
     ]
+  },
+  {
+    title: "Teaching Assistant",
+    company: "University of Windsor",
+    location: "Windsor, CA",
+    period: "Sep 2022 - Present",
+    description: [
+      "Assisted in teaching and grading for courses: Theoretical Fundamentals of Computer Science under Dr.Tsin, Computer Graphics with C++, and Key Concepts of Computer Science to assist over 300+ students."
+    ]
   }
+
 ];
 
 const Experience = () => {
