@@ -1,6 +1,7 @@
 
 import { useRef } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
@@ -13,7 +14,8 @@ const experiences = [
       "Modified and improved CSS and JavaScript to enhance the official future.uwindsor.ca website's design, layout, and responsiveness by 30%.",
       "Developed responsive web applications using React.js, enhancing UI/UX by 30%.",
       "Implemented REST APIs and optimized frontend performance, reducing load times by 40%."
-    ]
+    ],
+    skills: ["JavaScript", "HTML", "CSS", "WordPress", "React"]
   },
   {
     title: "Research Assistant",
@@ -26,7 +28,8 @@ const experiences = [
       "Engineered a recursive decomposition framework implementing 3 core procedures (OPGGEN, OPGGENONE, and OPGGENTWO) that, in simulation tests, produced over 1,000 unique graph instances in under 5 seconds on standard hardware.",
       "Implemented precise probability sampling techniques based on Schroeder and Catalan numbers, achieving 100% fidelity in forced-sample simulations that mirror theoretical models."
       ,"Bridged advanced combinatorial research and practical software development by translating intricate pseudocode into a fully functional tool—enhancing both algorithmic understanding and interactive graph visualization capabilities."
-    ]
+    ],
+    skills: ["Python", "Graph Theory", "Algorithm Design", "Computer Simulation"]
   },
   {
     title: "Teaching Assistant",
@@ -35,9 +38,9 @@ const experiences = [
     period: "Sep 2022 - Present",
     description: [
       "Assisted in teaching and grading for courses: Theoretical Fundamentals of Computer Science under Dr.Tsin, Computer Graphics with C++, and Key Concepts of Computer Science to assist over 300+ students."
-    ]
+    ],
+    skills: ["C++", "Java", "Discrete Mathematics", "WSL"]
   }
-
 ];
 
 const Experience = () => {
@@ -88,6 +91,17 @@ const Experience = () => {
                     </li>
                   ))}
                 </ul>
+                
+                <div className="mt-4 pt-3 border-t border-border/50">
+                  <h4 className="text-sm font-medium mb-2 text-primary/90">Skills & Technologies:</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {exp.skills.map((skill, i) => (
+                      <Badge key={i} variant="secondary" className="text-xs">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
               </CardContent>
             </Card>
           ))}
