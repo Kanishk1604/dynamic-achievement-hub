@@ -1,5 +1,4 @@
 
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Calendar, MapPin } from "lucide-react";
@@ -44,54 +43,44 @@ const experiences = [
 ];
 
 const ExperienceCard = ({ experience }: { experience: typeof experiences[0] }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-  
   return (
-    <div 
-      className="flip-card h-[500px] w-full"
-      onMouseEnter={() => setIsFlipped(true)}
-      onMouseLeave={() => setIsFlipped(false)}
-    >
-      <div className={`flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
-        {/* Front Card - Story */}
-        <div className="flip-card-front p-6 flex flex-col">
-          <h3 className="text-2xl font-serif font-bold mb-3">{experience.title}</h3>
-          <div className="text-sm text-primary mb-4">{experience.period}</div>
-          <div className="flex flex-wrap gap-2 mb-6">
-            {experience.skills.map((skill, i) => (
-              <Badge key={i} variant="secondary">{skill}</Badge>
-            ))}
-          </div>
-          <div className="flex items-center text-foreground/70 text-sm mt-2">
-            <Briefcase size={16} className="mr-2" />
-            <span>{experience.company}</span>
-          </div>
-          <div className="flex items-center text-foreground/70 text-sm mt-1">
-            <MapPin size={16} className="mr-2" />
-            <span>{experience.location}</span>
-          </div>
-          <div className="text-center mt-4 text-primary text-sm font-medium">
-            Hover to see details
-          </div>
+    <Card className="h-full">
+      <CardHeader>
+        <CardTitle className="font-serif">{experience.title}</CardTitle>
+        {experience.subtitle && (
+          <p className="text-sm text-muted-foreground">{experience.subtitle}</p>
+        )}
+        <div className="flex flex-wrap gap-2 mt-2">
+          {experience.skills.map((skill, i) => (
+            <Badge key={i} variant="secondary">{skill}</Badge>
+          ))}
         </div>
-
-        {/* Back Card - Details */}
-        <div className="flip-card-back p-6 flex flex-col">
-          <h3 className="text-xl font-serif font-bold mb-3">{experience.title}</h3>
-          <div className="flex-grow overflow-y-auto">
-            <h4 className="text-lg font-medium mb-3 text-primary">What I accomplished:</h4>
-            <ul className="space-y-3 mb-4">
-              {experience.description.map((item, i) => (
-                <li key={i} className="text-foreground/80 text-sm flex">
-                  <span className="text-primary mr-2">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+      </CardHeader>
+      <CardContent>
+        <div className="flex items-center text-foreground/70 text-sm mb-2">
+          <Briefcase size={16} className="mr-2" />
+          <span>{experience.company}</span>
         </div>
-      </div>
-    </div>
+        <div className="flex items-center text-foreground/70 text-sm mb-2">
+          <MapPin size={16} className="mr-2" />
+          <span>{experience.location}</span>
+        </div>
+        <div className="flex items-center text-foreground/70 text-sm mb-4">
+          <Calendar size={16} className="mr-2" />
+          <span>{experience.period}</span>
+        </div>
+        
+        <h4 className="text-lg font-medium mb-2 text-primary">What I accomplished:</h4>
+        <ul className="space-y-3">
+          {experience.description.map((item, i) => (
+            <li key={i} className="text-foreground/80 text-sm flex">
+              <span className="text-primary mr-2">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
   );
 };
 
