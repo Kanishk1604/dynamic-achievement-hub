@@ -7,7 +7,7 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     title: "Chatbot Implementation",
-    description: "Created an interactive chatbot capable of handling over 100 simultaneous calls and text inquiries, automating user information collection and processing over 2000 interactions per month.",
+    description: "I always wanted to make an automated bot that assists with any company's login portal, handle important dates for users and allow user queries to be dealt with ease.",
     tags: ["Node.js", "Twilio", "Google Calendar API"],
     timeline: "Nov 2024 - Feb 2025",
     features: [
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: "Universal Code Translator",
-    description: "Developed a code translator that converts code between multiple programming languages.",
+    description: "Everytime I failed solving a leetcode problem, when I went to see its solution, I would not always find a solution in my preferred programming language, so I created this website to allow code translation from one language to another.",
     tags: ["Python", "Flask", "Streamlit", "Heroku"],
     timeline: "Oct 2024 - Present",
     features: [
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     title: "Spiritual Knowledge",
-    description: "Built a dynamic website providing spiritual guidance and answers derived from sacred texts like the Bhagavad Gita and Bible, responding to over 500 user queries.",
+    description: "There are always 100 beliefs/esoteric solutions to any problem, but someone who is confused and hesitant cannot decipher what to do in that very moment of worry. Hence, this website allows you to get the answer to your problem through esoteric knowledge.",
     tags: ["Python", "Flask", "NLP", "React"],
     timeline: "Nov 2024 - Feb 2025",
     features: [
