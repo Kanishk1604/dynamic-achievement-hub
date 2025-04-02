@@ -1,5 +1,5 @@
 
-import { useRef } from "react";
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Calendar, MapPin } from "lucide-react";
@@ -43,9 +43,59 @@ const experiences = [
   }
 ];
 
-const Experience = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
+const ExperienceCard = ({ experience }: { experience: typeof experiences[0] }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+  
+  return (
+    <div 
+      className="flip-card h-[500px] w-full"
+      onMouseEnter={() => setIsFlipped(true)}
+      onMouseLeave={() => setIsFlipped(false)}
+    >
+      <div className={`flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
+        {/* Front Card - Story */}
+        <div className="flip-card-front p-6 flex flex-col">
+          <h3 className="text-2xl font-serif font-bold mb-3">{experience.title}</h3>
+          <div className="text-sm text-primary mb-4">{experience.period}</div>
+          <div className="flex flex-wrap gap-2 mb-6">
+            {experience.skills.map((skill, i) => (
+              <Badge key={i} variant="secondary">{skill}</Badge>
+            ))}
+          </div>
+          <div className="flex items-center text-foreground/70 text-sm mt-2">
+            <Briefcase size={16} className="mr-2" />
+            <span>{experience.company}</span>
+          </div>
+          <div className="flex items-center text-foreground/70 text-sm mt-1">
+            <MapPin size={16} className="mr-2" />
+            <span>{experience.location}</span>
+          </div>
+          <div className="text-center mt-4 text-primary text-sm font-medium">
+            Hover to see details
+          </div>
+        </div>
 
+        {/* Back Card - Details */}
+        <div className="flip-card-back p-6 flex flex-col">
+          <h3 className="text-xl font-serif font-bold mb-3">{experience.title}</h3>
+          <div className="flex-grow overflow-y-auto">
+            <h4 className="text-lg font-medium mb-3 text-primary">What I accomplished:</h4>
+            <ul className="space-y-3 mb-4">
+              {experience.description.map((item, i) => (
+                <li key={i} className="text-foreground/80 text-sm flex">
+                  <span className="text-primary mr-2">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Experience = () => {
   return (
     <section id="experience" className="py-24">
       <div className="container px-4 mx-auto">
@@ -57,53 +107,9 @@ const Experience = () => {
           </p>
         </div>
 
-        <div 
-          className="grid grid-cols-1 lg:grid-cols-3 gap-8" 
-          ref={containerRef}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="hover-scale relative">
-              <div className="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-full rounded-tr-lg"></div>
-              <CardHeader>
-                <CardTitle className="font-serif">{exp.title}</CardTitle>
-                {exp.subtitle && (
-                  <p className="text-primary/90 text-sm font-medium mt-1">{exp.subtitle}</p>
-                )}
-                <div className="flex items-center text-foreground/70 text-sm mt-2">
-                  <Briefcase size={16} className="mr-2" />
-                  <span>{exp.company}</span>
-                </div>
-                <div className="flex items-center text-foreground/70 text-sm mt-1">
-                  <MapPin size={16} className="mr-2" />
-                  <span>{exp.location}</span>
-                </div>
-                <div className="flex items-center text-primary text-sm mt-1">
-                  <Calendar size={16} className="mr-2" />
-                  <span>{exp.period}</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {exp.description.map((item, i) => (
-                    <li key={i} className="text-foreground/80 text-sm flex">
-                      <span className="text-primary mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <div className="mt-4 pt-3 border-t border-border/50">
-                  <h4 className="text-sm font-medium mb-2 text-primary/90">Skills & Technologies:</h4>
-                  <div className="flex flex-wrap gap-1.5">
-                    {exp.skills.map((skill, i) => (
-                      <Badge key={i} variant="secondary" className="text-xs">
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <ExperienceCard key={index} experience={exp} />
           ))}
         </div>
       </div>
