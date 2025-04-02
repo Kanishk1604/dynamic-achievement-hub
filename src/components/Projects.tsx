@@ -1,8 +1,9 @@
 
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { useState } from "react";
 
 const projects = [
   {
@@ -46,6 +47,67 @@ const projects = [
   }
 ];
 
+const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+  
+  return (
+    <div 
+      className="flip-card h-[500px] w-full"
+      onMouseEnter={() => setIsFlipped(true)}
+      onMouseLeave={() => setIsFlipped(false)}
+    >
+      <div className={`flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
+        {/* Front Card - Story */}
+        <div className="flip-card-front p-6 flex flex-col">
+          <h3 className="text-2xl font-serif font-bold mb-3">{project.title}</h3>
+          <div className="text-sm text-primary mb-4">{project.timeline}</div>
+          <div className="flex flex-wrap gap-2 mb-6">
+            {project.tags.map((tag, i) => (
+              <Badge key={i} variant="secondary">{tag}</Badge>
+            ))}
+          </div>
+          <div className="flex-grow">
+            <p className="text-foreground/90 text-base leading-relaxed">{project.description}</p>
+          </div>
+          <div className="text-center mt-4 text-primary text-sm font-medium">
+            Hover to see details
+          </div>
+        </div>
+
+        {/* Back Card - Details */}
+        <div className="flip-card-back p-6 flex flex-col">
+          <h3 className="text-xl font-serif font-bold mb-3">{project.title}</h3>
+          <div className="flex-grow overflow-y-auto">
+            <h4 className="text-lg font-medium mb-3 text-primary">What I accomplished:</h4>
+            <ul className="space-y-3 mb-4">
+              {project.features.map((feature, i) => (
+                <li key={i} className="text-foreground/80 text-sm flex">
+                  <span className="text-primary mr-2">•</span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex justify-between pt-4 border-t mt-auto">
+            <Button variant="outline" size="sm" className="gap-2" asChild>
+              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                <Github size={16} />
+                <span>Code</span>
+              </a>
+            </Button>
+            <Button size="sm" className="gap-2" asChild>
+              <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+                <ExternalLink size={16} />
+                <span>Live Demo</span>
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-muted/50">
@@ -60,44 +122,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="flex flex-col h-full hover-scale">
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <CardTitle className="font-serif">{project.title}</CardTitle>
-                </div>
-                <div className="text-sm text-primary mt-2">{project.timeline}</div>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {project.tags.map((tag, i) => (
-                    <Badge key={i} variant="secondary">{tag}</Badge>
-                  ))}
-                </div>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-foreground/80 text-sm mb-4">{project.description}</p>
-                <ul className="space-y-2">
-                  {project.features.map((feature, i) => (
-                    <li key={i} className="text-foreground/80 text-sm flex">
-                      <span className="text-primary mr-2">•</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              <CardFooter className="flex justify-between pt-4 border-t">
-                <Button variant="outline" size="sm" className="gap-2" asChild>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Github size={16} />
-                    <span>Code</span>
-                  </a>
-                </Button>
-                <Button size="sm" className="gap-2" asChild>
-                  <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={16} />
-                    <span>Live Demo</span>
-                  </a>
-                </Button>
-              </CardFooter>
-            </Card>
+            <ProjectCard key={index} project={project} />
           ))}
         </div>
       </div>
