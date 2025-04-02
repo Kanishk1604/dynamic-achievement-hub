@@ -28,7 +28,7 @@ const projects = [
       "Optimized API calls to reduce processing time by 40%, ensuring fast and efficient translations.",
       "Deployed on Heroku for seamless cloud-based access with a user-friendly Streamlit-based interface."
     ],
-    github: "https://github.com/kanishk/code-translator",
+    github: "https://github.com/Kanishk1604/IAS--universal-code-translator",
     liveDemo: "https://code-translator.example.com"
   },
   {
