@@ -28,7 +28,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/kanishk"
+                href="https://www.linkedin.com/in/kanishk-saini-/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-secondary-foreground/10 rounded-full text-secondary-foreground hover:bg-primary hover:text-white transition-colors"
