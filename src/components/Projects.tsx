@@ -68,7 +68,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
           <h3 className="text-2xl font-serif font-bold mb-3">{project.title}</h3>
           <div className="text-sm text-primary mb-2">{project.timeline}</div>
           
-          <h4 className="text-base mb-2 font-medium">{project.subtitle}</h4>
+          {/* <h4 className="text-base mb-2 font-medium">{project.subtitle}</h4> */}
           
           <div className="flex-grow flex items-center justify-center">
             <p className="text-lg font-medium text-primary/80 text-center">{project.tagline}</p>
