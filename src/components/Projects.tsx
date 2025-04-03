@@ -8,7 +8,7 @@ import { useState } from "react";
 const projects = [
   {
     title: "Spiritual Knowledge Assistant",
-    subtitle: "Ask your questions, receive guidance from sacred texts",
+    //subtitle: "Ask your questions, receive guidance from sacred texts",
     tagline: "📖 Esoteric insights made accessible through AI",
     description: "There are always 100 beliefs/esoteric solutions to any problem, but someone who is confused and hesitant cannot decipher what to do in that very moment of worry. Hence, this website allows you to get the answer to your problem through esoteric knowledge.",
     tags: ["Python", "Flask", "NLP", "React"],
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Intelligent Assistant Chatbot",
-    subtitle: "Automates user support, reminders, and login flow",
+    //subtitle: "Automates user support, reminders, and login flow",
     tagline: "🗨️ Smart voice + SMS handling for better user experience",
     description: "I always wanted to make an automated bot that assists with any company's login portal, handle important dates for users and allow user queries to be dealt with ease.",
     tags: ["Node.js", "Twilio", "Google Calendar API"],
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: "Universal Code Translator",
-    subtitle: "Convert code between multiple languages with ease",
+    //subtitle: "Convert code between multiple languages with ease",
     tagline: "🔁 Bridge the gap between languages, instantly",
     description: "Everytime I failed solving a leetcode problem, when I went to see its solution, I would not always find a solution in my preferred programming language, so I created this website to allow code translation from one language to another.",
     tags: ["Python", "Flask", "Streamlit", "Heroku"],
