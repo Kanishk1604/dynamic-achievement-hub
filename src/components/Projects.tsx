@@ -67,16 +67,13 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
         <div className="flip-card-front p-6 flex flex-col">
           <h3 className="text-2xl font-serif font-bold mb-3">{project.title}</h3>
           <div className="text-sm text-primary mb-2">{project.timeline}</div>
-          <p className="text-sm font-medium text-primary/80 mb-3">{project.tagline}</p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            {project.tags.map((tag, i) => (
-              <Badge key={i} variant="secondary">{tag}</Badge>
-            ))}
+          
+          <h4 className="text-base mb-2 font-medium">{project.subtitle}</h4>
+          
+          <div className="flex-grow flex items-center justify-center">
+            <p className="text-lg font-medium text-primary/80 text-center">{project.tagline}</p>
           </div>
-          <div className="flex-grow">
-            <h4 className="text-base mb-2 font-medium">{project.subtitle}</h4>
-            <p className="text-foreground/90 text-sm leading-relaxed">{project.description}</p>
-          </div>
+          
           <div className="text-center mt-4 text-primary text-sm font-medium">
             Hover to see details
           </div>
