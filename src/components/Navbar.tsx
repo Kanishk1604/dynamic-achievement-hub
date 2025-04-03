@@ -63,7 +63,7 @@ const Navbar = () => {
               {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
             </button>
             <a
-              href="https://github.com/kanishk"
+              href="https://github.com/Kanishk1604"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-foreground/80 hover:text-primary transition-colors"
@@ -72,7 +72,7 @@ const Navbar = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/kanishk"
+              href="https://www.linkedin.com/in/kanishk-saini-/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-foreground/80 hover:text-primary transition-colors"
@@ -119,7 +119,7 @@ const Navbar = () => {
                 {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
               </button>
               <a
-                href="https://github.com/kanishk"
+                href="https://github.com/Kanishk1604"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-foreground/80 hover:text-primary transition-colors"
@@ -128,7 +128,7 @@ const Navbar = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/kanishk"
+                href="https://www.linkedin.com/in/kanishk-saini-/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-foreground/80 hover:text-primary transition-colors"
