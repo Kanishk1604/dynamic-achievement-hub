@@ -26,7 +26,6 @@ const experiences = [
       "Developed a Python simulation tool that generates uniformly random outerplanar graphs with up to 12 vertices, accurately reproducing complex block–cutvertex structures with an average of 3 distinct cut–vertices per graph.",
       "Engineered a recursive decomposition framework implementing 3 core procedures that, in simulation tests, produced over 1,000 unique graph instances in under 5 seconds on standard hardware.",
       "Implemented precise probability sampling techniques based on Schroeder and Catalan numbers, achieving 100% fidelity in forced-sample simulations that mirror theoretical models."
-      
     ],
     skills: ["Python", "Graph Theory", "Algorithm Design", "Computer Simulation"]
   },
@@ -44,7 +43,7 @@ const experiences = [
 
 const ExperienceCard = ({ experience }: { experience: typeof experiences[0] }) => {
   return (
-    <Card className="h-full">
+    <Card className="w-full mb-8">
       <CardHeader>
         <CardTitle className="font-serif">{experience.title}</CardTitle>
         {experience.subtitle && (
@@ -95,11 +94,9 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 overflow-x-auto pb-4">
+        <div className="flex flex-col gap-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="w-full md:w-1/3 min-w-[300px] flex-shrink-0">
-              <ExperienceCard experience={exp} />
-            </div>
+            <ExperienceCard key={index} experience={exp} />
           ))}
         </div>
       </div>
