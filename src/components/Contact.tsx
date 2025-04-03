@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { toast } from "sonner";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -31,56 +31,56 @@ const Contact = () => {
   const [isEmailJSInitialized, setIsEmailJSInitialized] = useState(false);
 
   // Initialize EmailJS when component mounts
-  useEffect(() => {
-    // Replace with your EmailJS User ID
-    emailjs.init("YOUR_USER_ID");
-    setIsEmailJSInitialized(true);
-  }, []);
+  // useEffect(() => {
+  //   // Replace with your EmailJS User ID
+  //   emailjs.init("YOUR_USER_ID");
+  //   setIsEmailJSInitialized(true);
+  // }, []);
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    },
-  });
+  // const form = useForm<z.infer<typeof formSchema>>({
+  //   resolver: zodResolver(formSchema),
+  //   defaultValues: {
+  //     name: "",
+  //     email: "",
+  //     subject: "",
+  //     message: "",
+  //   },
+  // });
 
-  const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    if (!isEmailJSInitialized) {
-      toast.error("Email service is not initialized. Please try again later.");
-      return;
-    }
+  // const onSubmit = async (data: z.infer<typeof formSchema>) => {
+  //   if (!isEmailJSInitialized) {
+  //     toast.error("Email service is not initialized. Please try again later.");
+  //     return;
+  //   }
 
-    setIsSubmitting(true);
+  //   setIsSubmitting(true);
 
-    try {
-      // Replace with your EmailJS Service ID and Template ID
-      const response = await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        {
-          from_name: data.name,
-          from_email: data.email,
-          subject: data.subject,
-          message: data.message,
-        }
-      );
+  //   try {
+  //     // Replace with your EmailJS Service ID and Template ID
+  //     const response = await emailjs.send(
+  //       "YOUR_SERVICE_ID",
+  //       "YOUR_TEMPLATE_ID",
+  //       {
+  //         from_name: data.name,
+  //         from_email: data.email,
+  //         subject: data.subject,
+  //         message: data.message,
+  //       }
+  //     );
 
-      if (response.status === 200) {
-        toast.success("Message sent successfully! I'll get back to you soon.");
-        form.reset();
-      } else {
-        throw new Error("Failed to send message");
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-      toast.error("Failed to send message. Please try again later.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  //     if (response.status === 200) {
+  //       toast.success("Message sent successfully! I'll get back to you soon.");
+  //       form.reset();
+  //     } else {
+  //       throw new Error("Failed to send message");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error sending email:", error);
+  //     toast.error("Failed to send message. Please try again later.");
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
 
   return (
     <section id="contact" className="py-24 bg-muted/50">
@@ -165,7 +165,7 @@ const Contact = () => {
             </Card>
           </div>
           
-          <div className="lg:col-span-2">
+          {/* <div className="lg:col-span-2">
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-6 font-serif">Send Me a Message</h3>
@@ -252,7 +252,7 @@ const Contact = () => {
                 </Form>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
