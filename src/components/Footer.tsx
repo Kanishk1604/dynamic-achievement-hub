@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4 mb-4">
               <a
-                href="https://github.com/kanishk"
+                href="https://github.com/Kanishk1604"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-secondary-foreground/10 rounded-full text-secondary-foreground hover:bg-primary hover:text-white transition-colors"
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:saini6@uwindsor.ca"
+                href="mailto:saini56@uwindsor.ca"
                 className="p-2 bg-secondary-foreground/10 rounded-full text-secondary-foreground hover:bg-primary hover:text-white transition-colors"
                 aria-label="Email"
               >

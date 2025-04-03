@@ -26,7 +26,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold mb-1">Email</h4>
-                    <a href="mailto:saini6@uwindsor.ca" className="text-foreground/80 hover:text-primary transition-colors">
+                    <a href="mailto:saini56@uwindsor.ca" className="text-foreground/80 hover:text-primary transition-colors">
                       saini56@uwindsor.ca
                     </a>
                   </div>
@@ -58,7 +58,7 @@ const Contact = () => {
               <div className="mt-8">
                 <div className="flex gap-4 justify-start">
                   <a 
-                    href="https://github.com/kanishk" 
+                    href="https://github.com/Kanishk1604" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-2 bg-primary/10 rounded-full text-primary hover:bg-primary hover:text-white transition-colors"
@@ -69,7 +69,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://linkedin.com/in/kanishk" 
+                    href="https://www.linkedin.com/in/kanishk-saini-/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-2 bg-primary/10 rounded-full text-primary hover:bg-primary hover:text-white transition-colors"

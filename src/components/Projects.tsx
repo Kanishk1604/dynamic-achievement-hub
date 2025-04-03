@@ -15,7 +15,7 @@ const projects = [
       "Integrated Twilio for seamless communication via voice and SMS, resulting in a 40% reduction in manual customer support tasks.",
       "Implemented Google Calendar API to efficiently schedule and save over 300 important user-related dates and reminders monthly."
     ],
-    github: "https://github.com/kanishk/chatbot-implementation",
+    github: "https://github.com/Kanishk1604/chatbot-implementation",
     liveDemo: "https://chatbot-demo.example.com"
   },
   {
@@ -42,7 +42,7 @@ const projects = [
       "Implemented natural language processing (NLP) techniques to accurately understand user queries in both English and Hindi, achieving a comprehension accuracy of 95%.",
       "Integrated a responsive React frontend, improving user satisfaction ratings by 30% due to seamless interactions."
     ],
-    github: "https://github.com/kanishk/spiritual-knowledge",
+    github: "https://github.com/Kanishk1604/spiritual-knowledge",
     liveDemo: "https://bhagwatwisdom-app.lovable.app/"
   }
 ];
