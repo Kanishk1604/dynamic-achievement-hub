@@ -70,7 +70,6 @@ const ExperienceCard = ({ experience }: { experience: typeof experiences[0] }) =
           <span>{experience.period}</span>
         </div>
         
-        {/* <h4 className="text-lg font-medium mb-2 text-primary">What I accomplished:</h4> */}
         <ul className="space-y-3">
           {experience.description.map((item, i) => (
             <li key={i} className="text-foreground/80 text-sm flex">
@@ -96,9 +95,11 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col md:flex-row gap-8 overflow-x-auto pb-4">
           {experiences.map((exp, index) => (
-            <ExperienceCard key={index} experience={exp} />
+            <div key={index} className="w-full md:w-1/3 min-w-[300px] flex-shrink-0">
+              <ExperienceCard experience={exp} />
+            </div>
           ))}
         </div>
       </div>
