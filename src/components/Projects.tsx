@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "Spiritual Knowledge",
+    title: "Spiritual Knowledge Assistant",
     description: "There are always 100 beliefs/esoteric solutions to any problem, but someone who is confused and hesitant cannot decipher what to do in that very moment of worry. Hence, this website allows you to get the answer to your problem through esoteric knowledge.",
     tags: ["Python", "Flask", "NLP", "React"],
     timeline: "Nov 2024 - Feb 2025",
@@ -20,7 +20,7 @@ const projects = [
     liveDemo: "https://bhagwatwisdom-app.lovable.app/"
   },
   {
-    title: "Chatbot Implementation",
+    title: "Intelligent Assistant Chatbot",
     description: "I always wanted to make an automated bot that assists with any company's login portal, handle important dates for users and allow user queries to be dealt with ease.",
     tags: ["Node.js", "Twilio", "Google Calendar API"],
     timeline: "Nov 2024 - Feb 2025",
