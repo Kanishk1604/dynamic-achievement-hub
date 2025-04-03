@@ -7,6 +7,19 @@ import { useState } from "react";
 
 const projects = [
   {
+    title: "Spiritual Knowledge",
+    description: "There are always 100 beliefs/esoteric solutions to any problem, but someone who is confused and hesitant cannot decipher what to do in that very moment of worry. Hence, this website allows you to get the answer to your problem through esoteric knowledge.",
+    tags: ["Python", "Flask", "NLP", "React"],
+    timeline: "Nov 2024 - Feb 2025",
+    features: [
+      "Built a dynamic website providing spiritual guidance and answers derived from sacred texts like the Bhagavad Gita and Bible.",
+      "Implemented natural language processing (NLP) techniques to accurately understand user queries in both English and Hindi, achieving a comprehension accuracy of 95%.",
+      "Integrated a responsive React frontend, improving user satisfaction ratings by 30% due to seamless interactions."
+    ],
+    github: "https://github.com/Kanishk1604/spiritual-knowledge",
+    liveDemo: "https://bhagwatwisdom-app.lovable.app/"
+  },
+  {
     title: "Chatbot Implementation",
     description: "I always wanted to make an automated bot that assists with any company's login portal, handle important dates for users and allow user queries to be dealt with ease.",
     tags: ["Node.js", "Twilio", "Google Calendar API"],
@@ -31,20 +44,8 @@ const projects = [
     ],
     github: "https://github.com/Kanishk1604/IAS--universal-code-translator",
     liveDemo: "https://code-translator.example.com"
-  },
-  {
-    title: "Spiritual Knowledge",
-    description: "There are always 100 beliefs/esoteric solutions to any problem, but someone who is confused and hesitant cannot decipher what to do in that very moment of worry. Hence, this website allows you to get the answer to your problem through esoteric knowledge.",
-    tags: ["Python", "Flask", "NLP", "React"],
-    timeline: "Nov 2024 - Feb 2025",
-    features: [
-      "Built a dynamic website providing spiritual guidance and answers derived from sacred texts like the Bhagavad Gita and Bible.",
-      "Implemented natural language processing (NLP) techniques to accurately understand user queries in both English and Hindi, achieving a comprehension accuracy of 95%.",
-      "Integrated a responsive React frontend, improving user satisfaction ratings by 30% due to seamless interactions."
-    ],
-    github: "https://github.com/Kanishk1604/spiritual-knowledge",
-    liveDemo: "https://bhagwatwisdom-app.lovable.app/"
   }
+
 ];
 
 const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
