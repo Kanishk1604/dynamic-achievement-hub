@@ -16,7 +16,7 @@ const About = () => {
                     <p className="text-xl font-medium mb-4">University of Windsor</p>
                     <p className="text-2xl font-bold mb-2 font-serif">Bachelor of Science Honours</p>
                     <p className="mb-4">Computer Science with Software Engineering Specialization</p>
-                    <p className="font-bold text-xl">CGPA: 87.1%</p>
+                    <p className="font-bold text-xl">CGPA: 88%</p>
                   </div>
                 </div>
               </div>
