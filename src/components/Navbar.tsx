@@ -137,7 +137,7 @@ const Navbar = () => {
                 <Linkedin size={20} />
               </a>
               <Button className="ml-4" asChild>
-                <a href="/Kanishk2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="https://drive.google.com/file/d/1l1wBAGiXXZVBcjIAWi4pTp0moiaYEZZO/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a>
               </Button>
             </div>
           </div>
