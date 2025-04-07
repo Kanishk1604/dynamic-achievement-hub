@@ -9,8 +9,8 @@ const achievements = [
     icon: <Star className="h-10 w-10 text-yellow-500" />,
   },
   {
-    title: "36th Rank in ICPC Coding Competition",
-    description: "Achieved 36th rank in the ICPC coding competition (2023) across Ontario, CA.",
+    title: "Honorable mention and 35th Rank in ICPC Coding Competition ",
+    description: "Achieved 35th rank in the ICPC coding competition (2023) representing University of Windsor across Ontario, CA.",
     icon: <Medal className="h-10 w-10 text-primary" />,
     link: "https://drive.google.com/file/d/18qDlDNkJTb4UvCmOC5TuDQCoOFAKR3KE/view"
   },
