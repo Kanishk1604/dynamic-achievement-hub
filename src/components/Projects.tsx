@@ -148,6 +148,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
 const Projects = () => {
   const [showMore, setShowMore] = useState(false);
 
+  // Get the projects to display based on showMore state
   const displayedProjects = showMore ? projects : projects.slice(0, 3);
 
   return (
