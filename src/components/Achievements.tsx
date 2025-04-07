@@ -12,13 +12,14 @@ const achievements = [
     title: "36th Rank in ICPC Coding Competition",
     description: "Achieved 36th rank in the ICPC coding competition (2023) across Ontario, CA.",
     icon: <Medal className="h-10 w-10 text-primary" />,
-    link: "https://icpc.global"
+    link: "https://drive.google.com/file/d/18qDlDNkJTb4UvCmOC5TuDQCoOFAKR3KE/view"
   },
   {
     title: "NASA Space Apps Challenge",
+    liveDemo: "https://space-cosmic-clock.vercel.app/",
     description: "Recognized for innovative problem-solving in NASA Space Apps Challenge (2024).",
     icon: <Award className="h-10 w-10 text-blue-500" />,
-    link: "https://www.spaceappschallenge.org"
+    link: "https://drive.google.com/file/d/1myYDu-RkEzbNewbMmw2tbmHaupb0h4gJ/view"
   },
   {
     title: "Google IT Support Fundamentals",
