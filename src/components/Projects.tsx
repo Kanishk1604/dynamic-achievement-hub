@@ -2,13 +2,12 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
 const projects = [
   {
     title: "Spiritual Knowledge Assistant",
-    //subtitle: "Ask your questions, receive guidance from sacred texts",
     tagline: "📖 Esoteric insights made accessible through AI",
     description: "There are always 100 beliefs/esoteric solutions to any problem, but someone who is confused and hesitant cannot decipher what to do in that very moment of worry. Hence, this website allows you to get the answer to your problem through esoteric knowledge.",
     tags: ["Python", "Flask", "NLP", "React"],
@@ -23,7 +22,6 @@ const projects = [
   },
   {
     title: "Intelligent Assistant Chatbot",
-    //subtitle: "Automates user support, reminders, and login flow",
     tagline: "🗨️ Smart voice + SMS handling for better user experience",
     description: "I always wanted to make an automated bot that assists with any company's login portal, handle important dates for users and allow user queries to be dealt with ease.",
     tags: ["Node.js", "Twilio", "Google Calendar API"],
@@ -37,7 +35,6 @@ const projects = [
   },
   {
     title: "Universal Code Translator",
-    //subtitle: "Convert code between multiple languages with ease",
     tagline: "🔁 Bridge the gap between languages, instantly",
     description: "Everytime I failed solving a leetcode problem, when I went to see its solution, I would not always find a solution in my preferred programming language, so I created this website to allow code translation from one language to another.",
     tags: ["Python", "Flask", "Streamlit", "Heroku"],
@@ -50,6 +47,35 @@ const projects = [
     ],
     github: "https://github.com/Kanishk1604/IAS--universal-code-translator",
     liveDemo: "https://code-translator.example.com"
+  },
+  {
+    title: "Solar System",
+    tagline: "🌌 A 3D interactive experience of our cosmic neighborhood",
+    description: "",
+    tags: ["Java", "Java3D"],
+    timeline: "Jan 2023 - April 2023",
+    features: [
+      "Utilized Git and GitHub for version control, ensuring seamless integration of over 200 code contributions from team members, reducing code conflicts by 80%",
+      "Implemented Scrum methodologies, conducting daily stand-up meetings and bi-weekly sprints, resulting in a 20% improvement in project efficiency and on-time delivery",
+      "Successfully delivered the solar system project within the specified 3-month time frame, meeting all requirements and receiving a final grade of 97%"
+    ],
+    github: "https://github.com/Kanishk1604/SolarSystem",
+    liveDemo: ""
+  },
+  {
+    title: "Mobile Selling Store",
+    tagline: "📱 Comprehensive e-commerce platform for mobile phones",
+    description: "",
+    tags: ["HTML", "CSS", "Bootstrap 4", "JavaScript", "PHP", "MySQL"],
+    timeline: "Sep 2022 - Dec 2022",
+    features: [
+      "Led a team of 3: Organized meetings, delegated tasks and helped teammates debug over 300 lines of code",
+      "Implemented the entire login system to allow CRUD operations on the user list and user validation",
+      "Created a responsive homepage website that allows purchasing of mobile phones for teammates to use",
+      "Designed the overall website concept and layout helping us save over 20 hours of work"
+    ],
+    github: "https://github.com/Kanishk1604/mobile-store",
+    liveDemo: ""
   }
 ];
 
@@ -67,8 +93,6 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
         <div className="flip-card-front p-6 flex flex-col">
           <h3 className="text-2xl font-serif font-bold mb-3">{project.title}</h3>
           <div className="text-sm text-primary mb-2">{project.timeline}</div>
-          
-          {/* <h4 className="text-base mb-2 font-medium">{project.subtitle}</h4> */}
           
           <div className="flex-grow flex items-center justify-center">
             <p className="text-lg font-medium text-primary/80 text-center">{project.tagline}</p>
@@ -106,12 +130,14 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
                 <span>Code</span>
               </a>
             </Button>
-            <Button size="sm" className="gap-2" asChild>
-              <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                <ExternalLink size={16} />
-                <span>Live Demo</span>
-              </a>
-            </Button>
+            {project.liveDemo && (
+              <Button size="sm" className="gap-2" asChild>
+                <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink size={16} />
+                  <span>Live Demo</span>
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       </div>
@@ -120,6 +146,10 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
 };
 
 const Projects = () => {
+  const [showMore, setShowMore] = useState(false);
+
+  const displayedProjects = showMore ? projects : projects.slice(0, 3);
+
   return (
     <section id="projects" className="py-24 bg-muted/50">
       <div className="container px-4 mx-auto">
@@ -132,10 +162,30 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
+
+        {projects.length > 3 && (
+          <div className="text-center mt-12">
+            <Button 
+              variant="ghost" 
+              onClick={() => setShowMore(!showMore)}
+              className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 mx-auto transition-all hover:underline"
+            >
+              {showMore ? (
+                <>
+                  Show Less <ChevronUp size={18} />
+                </>
+              ) : (
+                <>
+                  Show More Projects <ChevronDown size={18} />
+                </>
+              )}
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
