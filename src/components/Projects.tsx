@@ -10,7 +10,7 @@ const projects = [
     title: "Spiritual Knowledge Assistant",
     tagline: "📖 Esoteric insights made accessible through AI",
     description: "There are always 100 beliefs/esoteric solutions to any problem, but someone who is confused and hesitant cannot decipher what to do in that very moment of worry. Hence, this website allows you to get the answer to your problem through esoteric knowledge.",
-    tags: ["Python", "Flask", "NLP", "React"],
+    tags: ["Python", "Flask", "NLP", "React","Vercel"],
     timeline: "Nov 2024 - Feb 2025",
     features: [
       "Built a dynamic website providing spiritual guidance and answers derived from sacred texts like the Bhagavad Gita and Bible.",
@@ -18,7 +18,7 @@ const projects = [
       "Integrated a responsive React frontend, improving user satisfaction ratings by 30% due to seamless interactions."
     ],
     github: "https://github.com/Kanishk1604/spiritual-knowledge",
-    liveDemo: "https://bhagwatwisdom-app.lovable.app/"
+    liveDemo: "https://spiritual-knowledge.vercel.app/"
   },
   {
     title: "Intelligent Assistant Chatbot",
@@ -31,7 +31,7 @@ const projects = [
       "Implemented Google Calendar API to efficiently schedule and save over 300 important user-related dates and reminders monthly."
     ],
     github: "https://github.com/Kanishk1604/chatbot-implementation",
-    liveDemo: "https://chatbot-demo.example.com"
+    liveDemo: "https://mamtasaini.app.n8n.cloud/webhook/fb6e03c6-9219-46c2-9c2e-a3ad9c848095/chat"
   },
   {
     title: "Universal Code Translator",
