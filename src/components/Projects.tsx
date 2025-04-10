@@ -17,7 +17,7 @@ const projects = [
       "Implemented natural language processing (NLP) techniques to accurately understand user queries in both English and Hindi, achieving a comprehension accuracy of 95%.",
       "Integrated a responsive React frontend, improving user satisfaction ratings by 30% due to seamless interactions."
     ],
-    github: "https://github.com/Kanishk1604/spiritual-knowledge",
+    github: "https://github.com/Kanishk1604/spiritualKnowledge",
     liveDemo: "https://spiritual-knowledge.vercel.app/"
   },
   {
