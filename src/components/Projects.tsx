@@ -63,6 +63,23 @@ const projects = [
     liveDemo: ""
   },
   {
+    title: "Dynamic Portfolio Hub",
+    tagline: "🧩 My evolving digital identity and project showcase",
+    description: "This portfolio serves as a centralized hub to showcase my projects, achievements, and experiences while continuously evolving with new features and design improvements.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vercel", "Figma", "Open Graph", "Responsive Design"],
+    timeline: "April 2025 - Present",
+    features: [
+      "Designed and developed a fully responsive portfolio using React.js and Tailwind CSS, deployed seamlessly with Vercel.",
+      "Implemented interactive project cards with flip animations to enhance user engagement.",
+      "Integrated Open Graph images for rich previews across social media platforms.",
+      "Showcased a growing collection of personal projects, achievements, and certifications with a dynamic layout.",
+      "Planned continuous improvements including automated project addition and Google Analytics for tracking engagement.",
+      "Optimized for recruiter-friendly viewability with ATS considerations and clean UI/UX principles."
+    ],
+    github: "https://github.com/Kanishk1604/dynamic-achievement-hub",
+    liveDemo: "https://kanishk-portfolio.vercel.app/"
+  },
+  {
     title: "Mobile Selling Store",
     tagline: "📱 Comprehensive e-commerce platform for mobile phones",
     description: "",
