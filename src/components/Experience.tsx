@@ -5,7 +5,7 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "Web Development Intern",
+    title: "Web Developer",
     company: "University of Windsor",
     location: "Windsor, CA",
     period: "Sep 2023 - Dec 2023",
