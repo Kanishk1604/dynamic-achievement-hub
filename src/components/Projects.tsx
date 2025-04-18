@@ -8,14 +8,17 @@ import { useState } from "react";
 const projects = [
   {
     title: "Spiritual Knowledge Assistant",
-    tagline: "📖 Esoteric insights made accessible through AI",
-    description: "There are always 100 beliefs/esoteric solutions to any problem, but someone who is confused and hesitant cannot decipher what to do in that very moment of worry. Hence, this website allows you to get the answer to your problem through esoteric knowledge.",
-    tags: ["Python", "Flask", "NLP", "React","Vercel"],
+    tagline: "📖 AI-powered spiritual wisdom at your fingertips",
+    description:
+      "This full-stack application bridges ancient wisdom with modern technology. Built to help users seek spiritual clarity through sacred texts using AI-driven conversations.",
+    tags: ["React.js", "Flask", "Python", "NLP", "Vercel", "Full Stack"],
     timeline: "Nov 2024 - Feb 2025",
     features: [
-      "Built a dynamic website providing spiritual guidance and answers derived from sacred texts like the Bhagavad Gita and Bible.",
-      "Implemented natural language processing (NLP) techniques to accurately understand user queries in both English and Hindi, achieving a comprehension accuracy of 95%.",
-      "Integrated a responsive React frontend, improving user satisfaction ratings by 30% due to seamless interactions."
+      "Developed an end-to-end spiritual AI assistant using a Python Flask backend and a dynamic React.js frontend.",
+      "Engineered RESTful APIs for handling user queries and NLP-based response generation, with multilingual support (English & Hindi).",
+      "Created a fully responsive frontend UI using React, Tailwind CSS, and TypeScript for seamless user experience across devices.",
+      "Integrated Flask routes with NLP models trained on spiritual texts to provide contextual and relevant answers.",
+      "Deployed the application globally using Vercel for frontend and Flask backend hosted via render/cloud solution.",
     ],
     github: "https://github.com/Kanishk1604/spiritualKnowledge",
     liveDemo: "https://spiritual-knowledge.vercel.app/"
@@ -67,7 +70,7 @@ const projects = [
     tagline: "🧩 My evolving digital identity and project showcase",
     description: "This portfolio serves as a centralized hub to showcase my projects, achievements, and experiences while continuously evolving with new features and design improvements.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vercel", "Figma", "Open Graph", "Responsive Design"],
-    timeline: "April 2025 - Present",
+    timeline: "April 2023 - Present",
     features: [
       "Designed and developed a fully responsive portfolio using React.js and Tailwind CSS, deployed seamlessly with Vercel.",
       "Implemented interactive project cards with flip animations to enhance user engagement.",
