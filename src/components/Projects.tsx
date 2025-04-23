@@ -80,7 +80,7 @@ const projects = [
       "Optimized for recruiter-friendly viewability with ATS considerations and clean UI/UX principles."
     ],
     github: "https://github.com/Kanishk1604/dynamic-achievement-hub",
-    liveDemo: "https://kanishk-portfolio.vercel.app/"
+    liveDemo: "https://personalportfolio-two-mocha.vercel.app/"
   },
   {
     title: "Mobile Selling Store",
