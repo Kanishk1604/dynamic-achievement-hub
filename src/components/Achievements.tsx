@@ -22,10 +22,10 @@ const achievements = [
     link: "https://drive.google.com/file/d/1myYDu-RkEzbNewbMmw2tbmHaupb0h4gJ/view"
   },
   {
-    title: "Google IT Support Fundamentals",
-    description: "Completed Google IT Support Fundamentals Course Certificate.",
+    title: "Google Cloud Essentials",
+    description: "Completed Google CLoud Essentials course .",
     icon: <Star className="h-10 w-10 text-green-500" />,
-    link: "https://www.coursera.org/account/accomplishments/certificate/ULXC987NUSW2"
+    link: "{https://www.cloudskillsboost.google/public_profiles/7bf86f63-40a0-43e5-8778-a2c981290479"
   }
 ];
 
