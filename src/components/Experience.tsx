@@ -10,9 +10,10 @@ const experiences = [
     location: "Windsor, CA",
     period: "Sep 2023 - Dec 2023",
     description: [
-      "Modified and improved CSS and JavaScript to enhance the official future.uwindsor.ca website's design, layout, and responsiveness by 30%.",
-      "Developed responsive web applications using React.js, enhancing UI/UX by 30%.",
-      "Implemented REST APIs and optimized frontend performance, reducing load times by 40%."
+      " Built a full-stack quiz app in React to help students explore programs aligned with their interests. I designed a weighted scoring system and worked closely with the marketing team to craft a UI that was both useful and fun. During testing, it helped over 800 students identify personalized academic matches.",
+      "Converted key areas of our Future Students website into a Progressive Web App (PWA) using service workers and caching strategies. This allowed pages to load offline, improved speed on mobile, and offered installable access for prospective students—a win for accessibility and retention.",
+      " Integrated 10+ Eloqua REST-based forms using vanilla JavaScript and async logic. These forms dynamically validated and submitted student info, contributing to a 30% lift in lead generation across our marketing campaigns.",
+      "Tested and optimized over 15+ responsive modules across browsers and devices to ensure seamless UX; containerized builds with Docker to simulate offline caching behavior in a PWA environment. Completed Google Ads certifications and helped launch A/B test campaigns, contributing to measurable improvements in student outreach engagement."
     ],
     skills: ["JavaScript", "HTML", "CSS", "WordPress", "React"]
   },
