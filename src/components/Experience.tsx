@@ -18,6 +18,21 @@ const experiences = [
     skills: ["JavaScript", "HTML", "CSS", "WordPress", "React"]
   },
   {
+  title: "Freelance Software & Automation Developer",
+  company: "Self-Employed",
+  location: "Remote",
+  period: "Jan 2024 – Present",
+  description: [
+    "Developed and launched 3+ full-stack automation platforms using Python, JavaScript, and REST APIs—reducing request load by 40% and serving over 10,000+ users monthly.",
+    "Built webhook-driven automation systems with Node.js and PostgreSQL, integrating Gmail, Twilio, and calendar APIs to handle 2,000+ user interactions per month.",
+    "Deployed scalable microservices using Java and Spring Boot, improving client-side response time by 35% and enabling real-time transaction handling.",
+    "Mentored 3 junior developers, led architecture reviews, and enforced clean, test-driven code via JUnit, Postman, and GitHub pull request workflows.",
+    "Collaborated with BFSI clients to define scope, establish automation pipelines, and secure third-party API integrations with sensitive business logic."
+  ],
+  skills: ["Python", "Node.js", "Java", "REST APIs", "PostgreSQL", "Twilio", "Docker", "GitHub", "Flask"]
+
+  },
+  {
     title: "Research Assistant",
     subtitle: "Supervised under Dr. Asish Mukhopadhyay",
     company: "University of Windsor",
@@ -30,16 +45,21 @@ const experiences = [
     ],
     skills: ["Python", "Graph Theory", "Algorithm Design", "Computer Simulation"]
   },
-  {
-    title: "Teaching Assistant",
-    company: "University of Windsor",
-    location: "Windsor, CA",
-    period: "Sep 2022 - Present",
-    description: [
-      "Assisted in teaching and grading for courses: Theoretical Fundamentals of Computer Science under Dr.Tsin, Computer Graphics with C++, and Key Concepts of Computer Science to assist over 300+ students."
-    ],
-    skills: ["C++", "Java", "Discrete Mathematics", "WSL"]
-  }
+{
+  title: "Teaching Assistant",
+  company: "University of Windsor",
+  location: "Windsor, ON",
+  period: "Jan 2024 – Apr 2025",
+  description: [
+    "Supported over 300 students across 3 core CS courses: Key Concepts of Computer Science, Theoretical Fundamentals of Computer Science (under Dr. Peter Tsin), and Computer Graphics with C++.",
+    "Held weekly office hours and Q&A sessions to assist with debugging, assignment walkthroughs, and conceptual clarity in logic, recursion, and OpenGL rendering.",
+    "Assisted in grading midterms, projects, and assignments, ensuring fair and consistent evaluation while providing detailed feedback to improve learning outcomes.",
+    "Mentored students struggling with foundational CS and math-heavy concepts, using visual explanations and analogies to bridge abstract theory with real-world understanding.",
+    "Utilized Brightspace and Blackboard to manage coursework, post announcements, and coordinate grade feedback in collaboration with faculty."
+  ],
+  skills: ["C++", "OpenGL", "Discrete Mathematics", "Teaching & Mentorship", "Brightspace", "Blackboard", "Debugging", "Algorithms", "Academic Support"]
+}
+
 ];
 
 const ExperienceCard = ({ experience }: { experience: typeof experiences[0] }) => {
