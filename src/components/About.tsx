@@ -28,58 +28,60 @@ const About = () => {
             <div className="h-1 w-20 bg-primary mb-6"></div>
             
             <p className="text-foreground/80 mb-6">
-              I'm a passionate software engineer with expertise in full-stack development. 
-              Currently based in Windsor, CA, I'm focused on creating efficient, user-friendly 
-              applications using modern technologies.
-            </p>
+            I'm a software engineer passionate about building scalable, high-performance systems. 
+            Based in Windsor, CA, I specialize in backend architecture, full-stack development, 
+            and creating developer-friendly, efficient applications.
+          </p>
+
+          <p className="text-foreground/80 mb-6">
+            With a strong computer science foundation and real-world experience launching distributed 
+            services, I focus on writing clean, extensible code that supports growth, reliability, 
+            and user trust. I’m driven by the challenge of optimizing infrastructure to power meaningful products.
+          </p>
+
             
-            <p className="text-foreground/80 mb-6">
-              With a strong foundation in computer science and hands-on experience in web 
-              development, I continually seek to expand my knowledge and skills in the ever-evolving 
-              tech landscape.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              <Card className="hover-scale">
-                <CardContent className="p-4 flex items-start">
-                  <CheckCircle className="text-primary mr-3 flex-shrink-0 mt-1" size={18} />
-                  <div>
-                    <h3 className="font-semibold mb-1">Full-Stack Development</h3>
-                    <p className="text-sm text-foreground/70">Building end-to-end applications</p>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="hover-scale">
-                <CardContent className="p-4 flex items-start">
-                  <CheckCircle className="text-primary mr-3 flex-shrink-0 mt-1" size={18} />
-                  <div>
-                    <h3 className="font-semibold mb-1">UI/UX Design</h3>
-                    <p className="text-sm text-foreground/70">Creating intuitive user experiences</p>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="hover-scale">
-                <CardContent className="p-4 flex items-start">
-                  <CheckCircle className="text-primary mr-3 flex-shrink-0 mt-1" size={18} />
-                  <div>
-                    <h3 className="font-semibold mb-1">API Development</h3>
-                    <p className="text-sm text-foreground/70">Building efficient backend services</p>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="hover-scale">
-                <CardContent className="p-4 flex items-start">
-                  <CheckCircle className="text-primary mr-3 flex-shrink-0 mt-1" size={18} />
-                  <div>
-                    <h3 className="font-semibold mb-1">Team Leadership</h3>
-                    <p className="text-sm text-foreground/70">Managing projects and teams</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <Card className="hover-scale">
+              <CardContent className="p-4 flex items-start">
+                <CheckCircle className="text-primary mr-3 flex-shrink-0 mt-1" size={18} />
+                <div>
+                  <h3 className="font-semibold mb-1">Scalable System Design</h3>
+                  <p className="text-sm text-foreground/70">Architecting resilient and performant services</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale">
+              <CardContent className="p-4 flex items-start">
+                <CheckCircle className="text-primary mr-3 flex-shrink-0 mt-1" size={18} />
+                <div>
+                  <h3 className="font-semibold mb-1">Cloud Infrastructure</h3>
+                  <p className="text-sm text-foreground/70">Deploying modular backends using AWS & Kubernetes</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale">
+              <CardContent className="p-4 flex items-start">
+                <CheckCircle className="text-primary mr-3 flex-shrink-0 mt-1" size={18} />
+                <div>
+                  <h3 className="font-semibold mb-1">Full-Stack Engineering</h3>
+                  <p className="text-sm text-foreground/70">Delivering complete products from backend to UI</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale">
+              <CardContent className="p-4 flex items-start">
+                <CheckCircle className="text-primary mr-3 flex-shrink-0 mt-1" size={18} />
+                <div>
+                  <h3 className="font-semibold mb-1">Automation & Optimization</h3>
+                  <p className="text-sm text-foreground/70">Using load testing and caching to improve performance</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           </div>
         </div>
       </div>
