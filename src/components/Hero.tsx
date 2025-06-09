@@ -21,9 +21,7 @@ const Hero = () => {
         </h1>
         
         <p className="max-w-2xl mx-auto text-lg text-foreground/80 mb-8 fade-up animation-delay-200 dark:text-foreground/70">
-          Computer Science graduate specializing in full-stack development, 
-          with expertise in React.js, Node.js, and various modern technologies. 
-          Building innovative solutions that make a difference.
+         Computer Science graduate with a focus on scalable backend systems and full-stack engineering. Passionate about building resilient, high-performance applications that empower users and developers alike.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 fade-up animation-delay-300">
