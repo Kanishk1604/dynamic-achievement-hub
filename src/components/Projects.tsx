@@ -37,6 +37,40 @@ const projects = [
     liveDemo: "https://mamtasaini.app.n8n.cloud/webhook/fb6e03c6-9219-46c2-9c2e-a3ad9c848095/chat"
   },
   {
+  title: "Invoice Reporting System",
+  tagline: "🧾 Automated invoicing with SSRS, SOAP, and XML exports",
+  description:
+    "A Java-based backend system designed to streamline invoice generation, reporting, and export workflows with real-time tax/shipping integrations and compliance-ready outputs.",
+  tags: ["Java", "Spring Boot", "SQL Server", "SSRS", "SOAP", "XML", "Docker"],
+  timeline: "Apr 2024 - May 2024",
+  features: [
+    "Developed a Spring Boot backend with SQL Server and SSRS integration to enable dynamic invoice scheduling and PDF/XML exports.",
+    "Built and consumed simulated SOAP APIs to fetch real-time tax and shipping metadata from Avalara and FedEx-style endpoints.",
+    "Implemented XSD-based XML validation and ensured PDF outputs followed WCAG 2.1 accessibility standards for legal compliance.",
+    "Created scheduled job workflows for invoice generation and export using Spring Scheduler and Quartz.",
+    "Containerized the development environment using Docker for isolated testing and streamlined deployment setup."
+  ],
+  github: "https://github.com/Kanishk1604/invoice-reporting-system",
+  liveDemo: "" // (replace if hosted)
+},
+  {
+  title: "Procurement Dashboard System",
+  tagline: "📊 Real-time procurement insights for smarter operations",
+  description:
+    "A microservices-based backend system powering real-time procurement dashboards with role-based access, query optimization, and containerized deployment.",
+  tags: ["Node.js", "Express", "PostgreSQL", "Docker", "Backend", "Microservices"],
+  timeline: "Jan 2024 - Mar 2024",
+  features: [
+    "Built a Node.js and Express backend with PostgreSQL to support real-time dashboard metrics across 5+ departments.",
+    "Designed normalized schemas and implemented optimized SQL queries with filters, joins, and indexes to handle departmental data segmentation.",
+    "Integrated middleware-based role-based access control (RBAC) to manage secure data visibility by user roles (e.g., admin, finance).",
+    "Containerized the entire service using Docker and Docker Compose for streamlined local testing and developer onboarding.",
+    "Enabled future scalability by modularizing services and creating CI/CD-ready structure for procurement, auth, and analytics APIs."
+  ],
+  github: "https://github.com/Kanishk1604/procurement-dashboard-system",
+  liveDemo: "" // (replace if hosting available)
+},
+  {
     title: "Universal Code Translator",
     tagline: "🔁 Bridge the gap between languages, instantly",
     description: "Everytime I failed solving a leetcode problem, when I went to see its solution, I would not always find a solution in my preferred programming language, so I created this website to allow code translation from one language to another.",
