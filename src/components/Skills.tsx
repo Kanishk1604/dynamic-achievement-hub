@@ -39,12 +39,34 @@ const Skills = () => {
       icon: <Code2 className="h-5 w-5" />,
       skills: [
         { name: "Python", level: 95 },
+        { name: "SQL", level: 85 },
         { name: "JavaScript", level: 90 },
         { name: "TypeScript", level: 85 },
         { name: "C/C++", level: 80 },
         { name: "Java", level: 75 },
-        { name: "SQL", level: 85 },
         { name: "HTML/CSS", level: 95 }
+      ]
+    },
+    {
+      id: "databases",
+      name: "Databases",
+      icon: <Database className="h-5 w-5" />,
+      skills: [
+        { name: "PostgreSQL", level: 90 },
+        { name: "MySQL", level: 85 },
+        { name: "MongoDB", level: 80 },
+        { name: "SQLite", level: 75 }
+      ]
+    },
+    {
+      id: "backend",
+      name: "Backend",
+      icon: <Server className="h-5 w-5" />,
+      skills: [
+        { name: "REST APIs", level: 90 },
+        { name: "GraphQL", level: 80 },
+        { name: "Microservices", level: 75 },
+        { name: "Serverless Architecture", level: 70 }
       ]
     },
     {
