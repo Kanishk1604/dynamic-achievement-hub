@@ -124,7 +124,10 @@ const Skills = () => {
 
         <Tabs defaultValue="languages" className="w-full">
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-2 md:grid-cols-4">
+            {/* <TabsList className="grid grid-cols-2 md:grid-cols-4"> 
+             */}
+             <TabsList className="flex flex-wrap gap-2 overflow-x-auto whitespace-nowrap justify-center">
+
               {categories.map((category) => (
                 <TabsTrigger key={category.id} value={category.id} className="flex items-center gap-2">
                   {category.icon}
