@@ -62,7 +62,7 @@ const LeetCode = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <Trophy size={20} className="text-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Solved over 120 problems focusing on data structures, algorithms, and problem-solving techniques</span>
+                  <span>Solved over 150 problems focusing on data structures, algorithms, and problem-solving techniques</span>
                 </li>
                 <li className="flex items-start">
                   <Trophy size={20} className="text-primary mt-1 mr-3 flex-shrink-0" />
