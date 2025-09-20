@@ -82,7 +82,7 @@ const Navbar = () => {
             </a>
             <Button className="ml-4" asChild>
               <a 
-                href="https://drive.google.com/file/d/1ka3eFKO2fbyXCQURpTO4ZMjABxxgvhZt/view" 
+                href="https://drive.google.com/file/d/1FYL8dxtKX-fcPvkD-61wVSt8VVsLKsrY/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
