@@ -46,7 +46,7 @@ const LeetCode = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div className="bg-background/50 dark:bg-background/20 p-4 rounded-lg text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">150+</div>
+                  <div className="text-3xl font-bold text-primary mb-1">170+</div>
                   <div className="text-sm text-foreground/70">Problems Solved</div>
                 </div>
                 <div className="bg-background/50 dark:bg-background/20 p-4 rounded-lg text-center">
