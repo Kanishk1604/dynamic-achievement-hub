@@ -5,6 +5,15 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    title: "Software Engineer (Contract)",
+    company: "Mercor",
+    location: "Remote",
+    period: "Nov 2025- Present",
+    description: [
+      "Debugging and evaluating Open-Source Repositories ensuring regression free code, validating test patches by analyzing failures tests, and ensuring prompt completeness."
+    ]
+  },
+  {
     title: "Web Developer",
     company: "University of Windsor",
     location: "Windsor, CA",
