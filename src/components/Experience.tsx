@@ -11,7 +11,8 @@ const experiences = [
     period: "Nov 2025- Present",
     description: [
       "Debugging and evaluating Open-Source Repositories ensuring regression free code, validating test patches by analyzing failures tests, and ensuring prompt completeness."
-    ]
+    ],
+    skills: ["JavaScript", "HTML", "CSS", "WordPress", "React"]
   },
   {
     title: "Web Developer",
