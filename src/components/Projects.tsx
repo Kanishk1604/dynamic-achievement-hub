@@ -24,19 +24,6 @@ const projects = [
     liveDemo: "https://spiritual-knowledge.vercel.app/"
   },
   {
-    title: "Intelligent Assistant Chatbot",
-    tagline: "🗨️ Smart voice + SMS handling for better user experience",
-    description: "I always wanted to make an automated bot that assists with any company's login portal, handle important dates for users and allow user queries to be dealt with ease.",
-    tags: ["Node.js", "Twilio", "Google Calendar API"],
-    timeline: "Nov 2024 - Feb 2025",
-    features: [
-      "Integrated Twilio for seamless communication via voice and SMS, resulting in a 40% reduction in manual customer support tasks.",
-      "Implemented Google Calendar API to efficiently schedule and save over 300 important user-related dates and reminders monthly."
-    ],
-    github: "https://github.com/Kanishk1604/chatbot-implementation",
-    liveDemo: "https://mamtasaini.app.n8n.cloud/webhook/fb6e03c6-9219-46c2-9c2e-a3ad9c848095/chat"
-  },
-  {
   title: "Invoice Reporting System",
   tagline: "🧾 Automated invoicing with SSRS, SOAP, and XML exports",
   description:
@@ -52,10 +39,10 @@ const projects = [
   ],
   github: "https://github.com/Kanishk1604/invoice-reporting-system",
   liveDemo: "" // (replace if hosted)
-},
+  },
   {
   title: "Procurement Dashboard System",
-  tagline: "📊 Real-time procurement insights for smarter operations",
+  tagline: "Real-time procurement insights for smarter operations",
   description:
     "A microservices-based backend system powering real-time procurement dashboards with role-based access, query optimization, and containerized deployment.",
   tags: ["Node.js", "Express", "PostgreSQL", "Docker", "Backend", "Microservices"],
@@ -67,9 +54,37 @@ const projects = [
     "Containerized the entire service using Docker and Docker Compose for streamlined local testing and developer onboarding.",
     "Enabled future scalability by modularizing services and creating CI/CD-ready structure for procurement, auth, and analytics APIs."
   ],
-  github: "https://github.com/Kanishk1604/procurement-dashboard-system",
+  github: "https://github.com/Kanishk1604/ProcurementDashboard",
   liveDemo: "" // (replace if hosting available)
-},
+  },
+  {
+  title: "Enterprise Resource Dashboard",
+  tagline: "Managing assets, employees, and role-based access seamlessly",
+  description:
+    "An internal enterprise dashboard to manage assets, employees, and role-based access with strong data integrity, secure APIs, and clear separation of concerns.",
+  tags: [".NET Core", "C#", "Entity Framework", "Angular 12+", "SQL Server", "Git"],
+  timeline: "May 2025 - June 2025",
+  features: [
+    "Developed a full-stack internal dashboard for managing enterprise assets and employee roles using Angular 12+ and .NET Core APIs.",
+    "Built secure RESTful APIs with Entity Framework and C#, handling CRUD operations across 3+ user roles and 1,000+ records",
+    "Implemented user authentication and role-based access with JWT, improving system security and audit compliance",
+    "Wrote unit tests covering 95%+ of backend logic and integrated CI workflows via Git for faster, error-free deployments"
+  ],
+  github: "https://github.com/Kanishk1604/ProcurementDashboard",
+  },
+  {
+    title: "Intelligent Assistant Chatbot",
+    tagline: "🗨️ Smart voice + SMS handling for better user experience",
+    description: "I always wanted to make an automated bot that assists with any company's login portal, handle important dates for users and allow user queries to be dealt with ease.",
+    tags: ["Node.js", "Twilio", "Google Calendar API"],
+    timeline: "Nov 2024 - Feb 2025",
+    features: [
+      "Integrated Twilio for seamless communication via voice and SMS, resulting in a 40% reduction in manual customer support tasks.",
+      "Implemented Google Calendar API to efficiently schedule and save over 300 important user-related dates and reminders monthly."
+    ],
+    github: "https://github.com/Kanishk1604/chatbot-implementation",
+    liveDemo: ""
+  },
   {
     title: "Universal Code Translator",
     tagline: "🔁 Bridge the gap between languages, instantly",
