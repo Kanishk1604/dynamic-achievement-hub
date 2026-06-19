@@ -10,7 +10,13 @@ const experiences = [
     location: "Remote",
     period: "Nov 2025- Present",
     description: [
-      "Debugging and evaluating Open-Source Repositories ensuring regression free code, validating test patches by analyzing failures tests, and ensuring prompt completeness."
+      "Worked on large-scale evaluation, benchmarking, and reliability testing of frontier AI coding agents across real-world software engineering workflows and Git environments. Designed and executed over 100 multi-turn evaluation tasks spanning more than 20 open-source repositories, each containing over 200 files, to assess model performance in debugging, feature development, and system design scenarios.",
+
+      "Conducted side-by-side benchmarking of frontier coding agents, including GPT-5.3 Codex and Claude Code, analyzing reasoning quality, instruction adherence, code correctness, interaction quality, and time-to-resolution. Audited full reasoning transcripts to identify recurring behavioral failures such as root-cause misses, code hallucinations, false success claims, premature convergence, agentic laziness, and unsafe tool usage.",
+
+      "In parallel, developed a large-scale Git training and evaluation dataset by creating more than 50 calibration tasks across curated open-source repositories covering advanced version control workflows including rebasing, merge conflict resolution, reflog recovery, branch recovery, detached HEAD debugging, and worktree management. Simulated more than 40 complex repository states and implemented gold-standard shell-based solutions within reproducible snapshot environments for reinforcement learning evaluation.",
+
+      "Performed rigorous quality assurance through deterministic validation checks, safety constraints, transcript auditing, and LLM-as-judge evaluation methodologies, contributing to a benchmark suite containing more than 500 tasks focused on instruction following, command correctness, and operational safety. Across these evaluations, identified and categorized more than 100 distinct behavioral issues and failure patterns, helping improve model reliability assessment and benchmark consistency for next-generation AI coding systems."
     ],
     skills: []
   },
