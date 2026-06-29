@@ -7,6 +7,81 @@ import { useState } from "react";
 
 const projects = [
   {
+  title: "AI-powered Codebase Reliability Agent",
+    tagline: "AI-powered Codebase Reliability Agent for semantic code search, repository reasoning, and software engineering assistance",
+    description:
+      "Built an end-to-end AI Codebase Reliability Agent that indexes software repositories using semantic embeddings, AST analysis, and vector search to answer codebase questions with traceable evidence. The platform extracts symbols, imports, method calls, and dependency relationships across multiple programming languages, enabling semantic search, repository reasoning, dependency exploration, and explainable AI-assisted code understanding.",
+    tags: [
+      "Python",
+      "FastAPI",
+      "Qdrant",
+      "Tree-sitter",
+      "Ollama",
+      "OpenAI",
+      "Retrieval-Augmented Generation (RAG)",
+      "Semantic Search",
+      "Vector Database",
+      "AST Parsing",
+      "Code Analysis",
+      "REST APIs"
+    ],
+    timeline: "June 2026 - Present",
+    features: [
+      "Architected and developed an AI-powered Codebase Reliability Agent using FastAPI, Qdrant, Tree-sitter, and LLMs, enabling semantic repository indexing, code search, dependency exploration, and repository-aware question answering through REST APIs",
+      "Built a hybrid retrieval pipeline combining vector embeddings, lexical matching, and AST-derived symbol boosting to improve semantic code retrieval across Python, TypeScript, Java, and C# repositories",
+      "Designed a multi-language AST analysis engine using Tree-sitter to automatically extract classes, methods, functions, interfaces, constants, imports, and method invocations for repository-wide semantic indexing",
+      "Implemented repository dependency analysis by constructing import graphs, call graphs, symbol lookup, dependency search, and repository graph summaries to support code navigation and architectural exploration",
+      "Developed structured reasoning context generation that organizes retrieved code into symbols, imports, calls, relationships, and source evidence before LLM inference, improving repository-aware reasoning over isolated code chunks",
+      "Built explainable AI-assisted repository question answering using Retrieval-Augmented Generation (RAG), returning traceable answers with file citations, source ranges, extracted symbols, and supporting evidence",
+      "Created an automated retrieval evaluation framework measuring file-level, symbol-level, and Top-K retrieval accuracy using curated benchmark questions, achieving 100% file accuracy and 100% symbol accuracy on the initial evaluation suite",
+      "Implemented answer validation guardrails that inspect generated responses for unsupported claims and compare answers against retrieved repository evidence before returning results",
+      "Designed a modular indexing pipeline supporting automatic repository ingestion, semantic chunking, metadata extraction, AST enrichment, and vector indexing for scalable repository analysis",
+      "Developed a multi-agent reasoning pipeline comprising planner, retriever, graph explorer, answer generation, and validation agents for autonomous repository analysis",
+      "Implemented repository-aware bug localization, root cause analysis, automated debugging assistance, and dependency impact analysis using semantic retrieval and repository graphs",
+      "Built AI-assisted code review, refactoring recommendations, architectural documentation generation, and repository summarization capabilities",
+      "Developed automated unit test generation, integration test generation, patch generation, and iterative code repair workflows with validation against repository context",
+      "Extended repository intelligence with full symbol reference tracking, cross-file dependency resolution, incremental indexing, Git-aware change detection, and repository evolution analysis",
+      "Generalized the platform through configurable language adapters supporting Go, Rust, C++, Kotlin, Swift, and PHP while enabling pluggable LLM providers, embedding models, and vector databases",
+      "Introduced observability and tracing with retrieval diagnostics, reasoning traces, confidence scoring, evaluation dashboards, and regression benchmarking for continuous AI system improvement",
+    ],
+    github: "https://github.com/Kanishk1604/CodebaseReliabilityAIAgent",
+  },
+  {
+  title: "Document Processing Platform",
+    tagline: "Process any documents including resumes, invoices, and more with ease",
+    description:
+      "This full-stack application bridges ancient wisdom with modern technology. Built to help users seek spiritual clarity through sacred texts using AI-driven conversations.",
+    tags: ["FastAPI", "Python", "PostgreSQL", "SQLAlchemy", "Redis", "Celery", "MinIO", "Docker", "Prometheus", "Grafana"],
+    timeline: "March 2026- April 2026",
+    features: [
+      "Architected and developed a distributed document processing platform using FastAPI, Celery, Redis, PostgreSQL, and MinIO, enabling asynchronous ingestion, storage, processing, and retrieval of user documents through 10+ REST APIs",
+      "Designed an event-driven job execution pipeline supporting end-to-end lifecycle tracking across 6 processing states (RECEIVED, QUEUED, RUNNING, SUCCEEDED, FAILED_TERMINAL, FAILED_RETRYABLE), with immutable audit events stored for observability and debugging",
+      "Implemented asynchronous background processing with Celery workers and Redis queues, reducing API response times from synchronous processing to sub-second job submission latency",
+      "Built a scalable object storage layer using MinIO with S3-compatible APIs, supporting persistent storage of uploaded documents and processing outputs through structured bucket and key management",
+      "Designed and normalized a PostgreSQL schema with Alembic migrations, modeling document metadata, job execution records, and event histories across 3 core relational entities",
+      "Developed fault-tolerant processing workflows with terminal and retryable failure handling, correlation IDs, attempt tracking, and detailed error propagation for operational troubleshooting",
+      "Instrumented application and worker services with Prometheus metrics, exposing 10+ operational counters, gauges, and latency metrics for real-time monitoring and performance analysis",
+      "Built Grafana dashboards visualizing job throughput, queue depth, processing latency, success rates, and failure trends, enabling proactive monitoring of distributed workloads",
+      "Containerized the complete platform with Docker Compose, orchestrating 6 interconnected services (API, Worker, PostgreSQL, Redis, MinIO, Monitoring Stack) to provide reproducible local and cloud-ready deployments",
+    ],
+    github: "https://github.com/Kanishk1604/JobProcessingPlatform",
+  },
+  {
+  title: "Enterprise Resource Dashboard",
+  tagline: "Managing assets, employees, and role-based access seamlessly",
+  description:
+    "An internal enterprise dashboard to manage assets, employees, and role-based access with strong data integrity, secure APIs, and clear separation of concerns.",
+  tags: [".NET Core", "C#", "Entity Framework", "Angular 12+", "SQL Server", "Git"],
+  timeline: "May 2025 - June 2025",
+  features: [
+    "Developed a full-stack internal dashboard for managing enterprise assets and employee roles using Angular 12+ and .NET Core APIs.",
+    "Built secure RESTful APIs with Entity Framework and C#, handling CRUD operations across 3+ user roles and 1,000+ records",
+    "Implemented user authentication and role-based access with JWT, improving system security and audit compliance",
+    "Wrote unit tests covering 95%+ of backend logic and integrated CI workflows via Git for faster, error-free deployments"
+  ],
+  github: "https://github.com/Kanishk1604/EnterPriseResourceDashboard",
+  },
+  {
     title: "Spiritual Knowledge Assistant",
     tagline: "📖 AI-powered spiritual wisdom at your fingertips",
     description:
@@ -39,38 +114,6 @@ const projects = [
   ],
   github: "https://github.com/Kanishk1604/invoice-reporting-system",
   liveDemo: "" // (replace if hosted)
-  },
-  {
-  title: "Procurement Dashboard System",
-  tagline: "Real-time procurement insights for smarter operations",
-  description:
-    "A microservices-based backend system powering real-time procurement dashboards with role-based access, query optimization, and containerized deployment.",
-  tags: ["Node.js", "Express", "PostgreSQL", "Docker", "Backend", "Microservices"],
-  timeline: "Jan 2024 - Mar 2024",
-  features: [
-    "Built a Node.js and Express backend with PostgreSQL to support real-time dashboard metrics across 5+ departments.",
-    "Designed normalized schemas and implemented optimized SQL queries with filters, joins, and indexes to handle departmental data segmentation.",
-    "Integrated middleware-based role-based access control (RBAC) to manage secure data visibility by user roles (e.g., admin, finance).",
-    "Containerized the entire service using Docker and Docker Compose for streamlined local testing and developer onboarding.",
-    "Enabled future scalability by modularizing services and creating CI/CD-ready structure for procurement, auth, and analytics APIs."
-  ],
-  github: "https://github.com/Kanishk1604/ProcurementDashboard",
-  liveDemo: "" // (replace if hosting available)
-  },
-  {
-  title: "Enterprise Resource Dashboard",
-  tagline: "Managing assets, employees, and role-based access seamlessly",
-  description:
-    "An internal enterprise dashboard to manage assets, employees, and role-based access with strong data integrity, secure APIs, and clear separation of concerns.",
-  tags: [".NET Core", "C#", "Entity Framework", "Angular 12+", "SQL Server", "Git"],
-  timeline: "May 2025 - June 2025",
-  features: [
-    "Developed a full-stack internal dashboard for managing enterprise assets and employee roles using Angular 12+ and .NET Core APIs.",
-    "Built secure RESTful APIs with Entity Framework and C#, handling CRUD operations across 3+ user roles and 1,000+ records",
-    "Implemented user authentication and role-based access with JWT, improving system security and audit compliance",
-    "Wrote unit tests covering 95%+ of backend logic and integrated CI workflows via Git for faster, error-free deployments"
-  ],
-  github: "https://github.com/Kanishk1604/ProcurementDashboard",
   },
   {
     title: "Intelligent Assistant Chatbot",
