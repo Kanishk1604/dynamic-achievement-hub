@@ -4,6 +4,12 @@ import { Award, Star, Medal } from "lucide-react";
 
 const achievements = [
   {
+    title: "World Record Literary Honor Certificate",
+    description: "Recognized by the Golden Book of World Records for contributing to the AAINA Heritage World Record Project through literary participation, promoting Hindi literature and cultural heritage globally (2026).",
+    icon: <Medal className="h-10 w-10 text-primary" />,
+    link: "https://drive.google.com/file/d/1dYzl4fbGKGKuSEYfOwikH6YsNI-OJrib/view?usp=sharing"
+  },
+  {
     title: "President's Honour Roll",
     description: "Recognized for academic excellence.",
     icon: <Star className="h-10 w-10 text-yellow-500" />,
